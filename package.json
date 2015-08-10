@@ -1,0 +1,26 @@
+{
+  "name": "video-stream",
+  "version": "0.0.0",
+  "description": "Stream video through Raspberry Pi Camera Module using node-opencv.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiveditN/video-stream.git"
+  },
+  "keywords": [
+    "Node.js",
+    "OpenCV",
+    "Raspberry",
+    "Pi",
+    "Video"
+  ],
+  "author": "NiveditN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiveditN/video-stream/issues"
+  },
+  "homepage": "https://github.com/NiveditN/video-stream#readme"
+}
