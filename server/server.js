@@ -15,6 +15,17 @@ app.use(morgan('dev'));
 // serve index
 require('./lib/routes').serveIndex(app, configServer.staticFolder);
 
+var mem;   
+setInterval(function() {
+  mem = process.memoryUsage();
+  if(mem.heapUsed/1000 > 7000) {
+    console.log(mem.heapUsed / 1000);
+    global.gc();
+    console.log('GC done');
+    console.log('-----');
+  }
+}, 1000);
+
 // HTTP server
 var server = http.createServer(app);
 server.listen(app.get('port'), function () {
